@@ -1,24 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Editor
 
-## Getting Started
+A real-time collaborative text editor built with Next.js, Liveblocks, Lexical, and Clerk for authentication.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Real-time collaboration: multiple users can edit the same document at the same time.
+- Rich Text editing built on top of Lexical.
+- Secure Authentication with Clerk.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup Instructions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Rename `.env.example` to `.env.local` and fill in the required environment variables:
+   - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`: From your Clerk dashboard.
+   - `CLERK_SECRET_KEY`: From your Clerk dashboard.
+   - `LIVEBLOCKS_SECRET_KEY`: From your Liveblocks dashboard.
+4. Run `npm run dev` to start the development server.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Screenshots
+
+![screenshot](./public/favicon.ico)
 
 ## Learn More
 
